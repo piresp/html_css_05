@@ -23,31 +23,31 @@ stretch (valor padrão), flex-start, flex-end e center
 
 Usar **fr** unidade de medida 
 
-Criar linhas e colunas:  
+> Criar linhas e colunas:  
 
-.class {  
-    **grid-template-rows**: n fr n fr;  
-    **grid-template-columns**: n fr n fr;   
-  }  
+>> .class {  
+    >>>**grid-template-rows**: n fr n fr;  
+    >>>**grid-template-columns**: n fr n fr;   
+  >>}  
   
 ----------------------------------------  
   
-Mescla de linhas e colunas:
+> Mescla de linhas e colunas:
 
-.class {   
-    **grid-columns**: span n;  
-    **grid-rows**: span n;  
-  }  
+>> .class {   
+    >>> **grid-columns**: span n;  
+    >>> **grid-rows**: span n;  
+  >> }  
   
 ----------------------------------------  
   
-Espaçamento entre celulas: 
+> Espaçamento entre celulas: 
 
-.class {  
-    **gap**: n px;  
-    **row-gap**: n px;    
-    **column-gap**: n px;  
-  }  
+>> .class {  
+    >>> **gap**: n px;  
+    >>> **row-gap**: n px;    
+    >>> **column-gap**: n px;  
+  >> }  
   
 ---------------------------------------- 
 
