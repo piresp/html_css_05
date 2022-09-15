@@ -26,28 +26,28 @@ Usar **fr** unidade de medida
 > Criar linhas e colunas:  
 
 >> .class {  
-    >>>**grid-template-rows**: n fr n fr;  
-    >>>**grid-template-columns**: n fr n fr;   
-  >>}  
+>>> **grid-template-rows**: n fr n fr;  
+>>> **grid-template-columns**: n fr n fr;   
+>>}  
   
 ----------------------------------------  
   
 > Mescla de linhas e colunas:
 
 >> .class {   
-    >>> **grid-columns**: span n;  
-    >>> **grid-rows**: span n;  
-  >> }  
+>>> **grid-columns**: span n;  
+>>> **grid-rows**: span n;  
+>> }  
   
 ----------------------------------------  
   
 > Espaçamento entre celulas: 
 
 >> .class {  
-    >>> **gap**: n px;  
-    >>> **row-gap**: n px;    
-    >>> **column-gap**: n px;  
-  >> }  
+>>> **gap**: n px;  
+>>> **row-gap**: n px;    
+>>> **column-gap**: n px;  
+>> }  
   
 ---------------------------------------- 
 
