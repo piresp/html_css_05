@@ -21,8 +21,33 @@ stretch (valor padrão), flex-start, flex-end e center
 
 ## 02 - Grid
 
-Propriedades para criar linhas e colunas: **grid-template-rows, grid-template-columns**
-Mescla de linhas e colunas com as propriedades **grid-columns: span n, grid-rows: span n**  
-Usar **fr** unidade de medida  
+Usar **fr** unidade de medida 
 
+Criar linhas e colunas: 
+
+.class {  
+  **grid-template-rows**: n fr n fr;
+  **grid-template-columns**: n fr n fr; 
+  }  
+  
 ----------------------------------------  
+  
+Mescla de linhas e colunas:
+
+.class {   
+  **grid-columns**: span n;
+  **grid-rows**: span n
+  }  
+  
+----------------------------------------  
+  
+Espaçamento entre celulas: 
+
+.class {  
+  **gap**: n px;  
+  **row-gap**: n px;    
+  **column-gap**: n px;  
+  }  
+  
+---------------------------------------- 
+
