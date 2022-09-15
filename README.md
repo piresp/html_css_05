@@ -30,16 +30,12 @@ Criar linhas e colunas:
 > **grid-template-columns**: n fr n fr;   
 > }  
   
-----------------------------------------  
-  
 Mescla de linhas e colunas:
 
 > .class {   
 > **grid-columns**: span n;  
 > **grid-rows**: span n;  
-> }  
-  
-----------------------------------------  
+> }   
   
 Espaçamento entre celulas: 
 
