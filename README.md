@@ -10,11 +10,11 @@
 
 ## 01 - Alinhamento  
 
-**justify-content: eixo x**  
+**justify-content: "x"**  
 flex-start (valor padrão), flex-end, center, space-around, space-evenly e space-between.  
 
 
-**align-items: eixo y**  
+**align-items: "y"**  
 stretch (valor padrão), flex-start, flex-end e center  
 
 ----------------------------------------  
