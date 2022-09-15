@@ -23,11 +23,11 @@ stretch (valor padrão), flex-start, flex-end e center
 
 Usar **fr** unidade de medida 
 
-Criar linhas e colunas: 
+Criar linhas e colunas:  
 
 .class {  
-  **grid-template-rows**: n fr n fr;
-  **grid-template-columns**: n fr n fr; 
+  **grid-template-rows**: n fr n fr;  
+  **grid-template-columns**: n fr n fr;   
   }  
   
 ----------------------------------------  
@@ -35,8 +35,8 @@ Criar linhas e colunas:
 Mescla de linhas e colunas:
 
 .class {   
-  **grid-columns**: span n;
-  **grid-rows**: span n
+  **grid-columns**: span n;  
+  **grid-rows**: span n;  
   }  
   
 ----------------------------------------  
