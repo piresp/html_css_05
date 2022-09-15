@@ -1,6 +1,4 @@
-# Curso Alura "CSS: dispondo elementos com Flexbox e Grid"
-
-# Indice  
+# Curso Alura "CSS: dispondo elementos com Flexbox e Grid"  
 
 ## 01 - Alinhamento
 ## 02 - Grid  
