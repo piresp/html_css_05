@@ -25,21 +25,21 @@ Usar **fr** como unidade de medida.
 
 Criar linhas e colunas:  
 
-> .class {  
+> .**class** {  
 > **grid-template-rows**: n fr n fr;  
 > **grid-template-columns**: n fr n fr;   
 > }  
   
 Mescla de linhas e colunas:
 
-> .class {   
+> .**class** {   
 > **grid-columns**: span n;  
 > **grid-rows**: span n;  
 > }   
   
 Espaçamento entre celulas: 
 
-> .class {  
+> .**class** {  
 > **gap**: n px;  
 > **row-gap**: n px;    
 > **column-gap**: n px;  
@@ -47,23 +47,23 @@ Espaçamento entre celulas:
   
 Posicionar Elementos:  
     
-> .class {   
+> .**class** {   
 > **grid-columns**: 1 / span 2;  
 > **grid-rows**: 2 span 3;  
 > }   
     
 Grid Area  
   
->.videos-recentes { // nomear  
->    grid-area: videos-recentes;  
+>.**videos-recentes** { // nomear  
+>   **grid-area**: videos-recentes;  
 >}  
   
->.principal {  
->        display: grid;  
->        grid-template-areas:   
->            "titulo-pagina titulo-pagina titulo-pagina"  
->            "destaque-video destaque-video videos-recentes";  
->}  
+>.**principal** {  
+>   **display**: grid;  
+>   **grid-template-areas**:   
+>     "titulo-pagina titulo-pagina titulo-pagina"  
+>     "destaque-video destaque-video videos-recentes";  
+>}    
   
 ---------------------------------------- 
 
