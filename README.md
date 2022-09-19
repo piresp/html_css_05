@@ -3,8 +3,6 @@
 ## 01 - Alinhamento
 ## 02 - Grid  
 
-----------------------------------------  
-
 ## 01 - Alinhamento  
   
 **justify-content:**    
@@ -17,27 +15,25 @@ stretch (valor padrão), flex-start, flex-end e center
 
 **Column:** justify-content: "y", align-items: "x"
 
-----------------------------------------  
-
 ## 02 - Grid
 
 Usar **fr** como unidade de medida.
 
-Criar linhas e colunas:  
+#### Criar linhas e colunas:  
 
 > .**class** {  
 > **grid-template-rows**: n fr n fr;  
 > **grid-template-columns**: n fr n fr;   
 > }  
   
-Mescla de linhas e colunas:
+#### Mescla de linhas e colunas:
 
 > .**class** {   
 > **grid-columns**: span n;  
 > **grid-rows**: span n;  
 > }   
   
-Espaçamento entre celulas: 
+#### Espaçamento entre celulas: 
 
 > .**class** {  
 > **gap**: n px;  
@@ -45,14 +41,14 @@ Espaçamento entre celulas:
 > **column-gap**: n px;  
 > }    
   
-Posicionar Elementos:  
+#### Posicionar Elementos:  
     
 > .**class** {   
 > **grid-columns**: 1 / span 2;  
 > **grid-rows**: 2 span 3;  
 > }   
     
-Grid Area  
+#### Grid Area  
   
 >.**videos-recentes** { // nomear  
 >   **grid-area**: videos-recentes;  
