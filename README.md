@@ -57,6 +57,3 @@ Usar **fr** como unidade de medida.
 >     "titulo-pagina titulo-pagina titulo-pagina"  
 >     "destaque-video destaque-video videos-recentes";  
 >}    
-  
----------------------------------------- 
-
