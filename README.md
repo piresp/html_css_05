@@ -52,11 +52,11 @@ Posicionar Elementos:
 > **grid-rows**: 2 span 3;  
 > }   
     
-Grid Area
-
->.videos-recentes { // nomear
->    grid-area: videos-recentes;
->}
+Grid Area  
+  
+>.videos-recentes { // nomear  
+>    grid-area: videos-recentes;  
+>}  
   
 >.principal {  
 >        display: grid;  
