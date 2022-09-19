@@ -43,7 +43,14 @@ Espaçamento entre celulas:
 > **gap**: n px;  
 > **row-gap**: n px;    
 > **column-gap**: n px;  
-> }  
+> }    
   
+Posicionar Elementos:  
+    
+> .class {   
+> **grid-columns**: 1 / span 2;  
+> **grid-rows**: 2 span 3;  
+> }   
+    
 ---------------------------------------- 
 
