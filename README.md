@@ -54,16 +54,16 @@ Posicionar Elementos:
     
 Grid Area
 
-.videos-recentes { // nomear
-    grid-area: videos-recentes;
-}
+>.videos-recentes { // nomear
+>    grid-area: videos-recentes;
+>}
   
-.principal {  
-        display: grid;  
-        grid-template-areas:   
-            "titulo-pagina titulo-pagina titulo-pagina"  
-            "destaque-video destaque-video videos-recentes";  
-}  
+>.principal {  
+>        display: grid;  
+>        grid-template-areas:   
+>            "titulo-pagina titulo-pagina titulo-pagina"  
+>            "destaque-video destaque-video videos-recentes";  
+>}  
   
 ---------------------------------------- 
 
