@@ -52,5 +52,18 @@ Posicionar Elementos:
 > **grid-rows**: 2 span 3;  
 > }   
     
+Grid Area
+
+.videos-recentes { // nomear
+    grid-area: videos-recentes;
+}
+  
+.principal {  
+        display: grid;  
+        grid-template-areas:   
+            "titulo-pagina titulo-pagina titulo-pagina"  
+            "destaque-video destaque-video videos-recentes";  
+}  
+  
 ---------------------------------------- 
 
