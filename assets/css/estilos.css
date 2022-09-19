@@ -9,7 +9,7 @@ body {
     color: #FFFFFF;
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1440px) {
     body {
         display: grid;
         grid-template-columns: auto 1fr;
@@ -43,7 +43,7 @@ body {
     display: none;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1440px) {
     .cabecalho {
         background-color: #1D232A;
         display: grid;
@@ -78,7 +78,8 @@ body {
         content: "";
         display: block;
         width: 32px;
-        background-image: url(../img/profile_1.png);
+        height: 32px;
+        background-image: url(../img/profile_2.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -100,12 +101,12 @@ body {
 
     position: absolute;
     left: -100vw;
-    transition: .5s;
+    transition: .25s;
 }
 
 .menu-lateral--ativo {
     left: 0;
-    transition: .5s;
+    transition: .25s;
 }
 
 .menu-lateral__logo {
@@ -129,7 +130,7 @@ body {
 }
 
 .menu-lateral__link::before {
-    content: "";
+    content: "\e900";
     width: 24px;
     height: 24px;
     font-size: 24px;
@@ -161,7 +162,7 @@ body {
     content: "\e90a";
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1440px) {
     .menu-lateral {
         position: static;
         width: 200px;
@@ -170,7 +171,6 @@ body {
     }
 }
 
-
 .principal {
     padding: 24px 16px;
     display: grid;
@@ -178,7 +178,7 @@ body {
 }
 
 .titulo-pagina {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -187,13 +187,24 @@ body {
     font-weight: 700;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1440px) {
     .principal {
         display: grid;
         grid-template-columns: auto 1fr auto;
+        grid-template-areas: 
+            "titulo-pagina titulo-pagina titulo-pagina"
+            "destaque-video destaque-video videos-recentes"
+            "secao-videos secao-videos secao-videos"
+            "produtos-recentes destaque-produtos destaque-produtos"
+            "secao-produtos secao-produtos secao-produtos"       
+        ;
         column-gap: 32px;
         padding: 16px 60px;
         grid-column: 2;
+    }
+
+    .titulo-secao {
+        grid-column: span 4;
     }
 }
 
@@ -202,6 +213,10 @@ body {
     border-radius: 15px;
     overflow: hidden;
     background-color: #2C343A;
+}
+
+.cartao__imagem--desktop {
+    display: none;
 }
 
 .cartao--destaque {
@@ -220,7 +235,7 @@ body {
 }
 
 .cartao__titulo {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 700;
     grid-column: span 2;
 }
@@ -239,12 +254,12 @@ body {
 
 .cartao__info--tempo::before {
     content: "\e90c";
-    margin-right: 8px;
+    margin-right: 8px;    
 }
 
 .cartao__info--visualizacao::before {
     content: "\e90f";
-    margin-right: 8px;
+    margin-right: 8px;    
 }
 
 .cartao__botao {
@@ -277,7 +292,24 @@ body {
     display: none;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1440px) {
+    .cartao--destaque {
+        margin-bottom: 0;
+    }
+
+    .cartao__imagem--mobile {
+        display: none;
+    }
+
+    .cartao__imagem--desktop {
+        display: block;
+    }
+
+    .cartao__botao--destaque {
+        grid-column: auto;
+        padding: 16px 8px;
+    }
+
     .cartao--recentes {
         display: grid;
         grid-template-columns: auto auto;
@@ -286,6 +318,7 @@ body {
         width: 256px;
         padding: 16px;
         box-sizing: border-box;
+        align-self: flex-start;
     }
 
     .cartao--recentes .cartao__titulo {
@@ -298,7 +331,7 @@ body {
         color: #0480DC;
         justify-self: flex-end;
     }
-
+    
     .cartao__lista {
         display: grid;
         row-gap: 16px;
@@ -331,4 +364,34 @@ body {
 .secao {
     display: grid;
     gap: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+    .secao {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .destaque-video {
+        grid-area: destaque-video;
+    }
+    
+    .videos-recentes {
+        grid-area: videos-recentes;
+    }
+    
+    .secao-videos {
+        grid-area: secao-videos;
+    }
+    
+    .destaque-produtos {
+        grid-area: destaque-produtos;
+    }
+    
+    .produtos-recentes {
+        grid-area: produtos-recentes;
+    }
+    
+    .secao-produtos {
+        grid-area: secao-produtos;
+    }
 }
