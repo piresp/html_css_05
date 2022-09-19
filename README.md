@@ -1,8 +1,5 @@
 # Curso Alura "CSS: dispondo elementos com Flexbox e Grid"  
 
-## 01 - Alinhamento
-## 02 - Grid  
-
 ## 01 - Alinhamento  
   
 **justify-content:**    
