@@ -217,6 +217,11 @@ body {
 
 .cartao__imagem {
     width: auto; 
+    max-height: 200px; 
+}
+
+.cartao__imagem--destaque {
+    width: auto; 
     max-height: 500px; 
 }
 
@@ -276,11 +281,14 @@ body {
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+}
+
+.cartao__link {
     justify-self: flex-end;
 }
 
-.cartao__botao--play::before {
-    content: "\e90b";
+.cartao__botao--picos::before {
+    content: "\e909";
     font-size: 24px;
 }
 
